@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<math.h>
+#define PI 3.14159
+
+int main(){
+	double a, b, c;
+	double tri, cir, tra, qua, ret;
+	scanf("%lf %lf %lf", &a, &b, &c);
+	tri = (a*c)/2;
+	cir = PI * pow(c,2);
+	tra = (a + b) * (c/2);
+	qua = pow(b, 2);
+	ret = a * b;
+	
+	printf("TRIANGULO: %.2lf\n", tri);
+	printf("TRIANGULO: %.2lf\n", cir);
+	printf("TRAPEZIO: %.2lf\n", tra);
+	printf("QUADRADO: %.2lf\n", qua);
+	printf("RETANGULO: %.2lf\n", ret);
+	
+	return(0);
+}
